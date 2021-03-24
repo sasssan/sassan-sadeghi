@@ -18,14 +18,17 @@ public class HomePO {
     public static final By balanceBtn = By.id("balance_amount");
     public static final By incomeTxt = By.id("income_amount_text");
     public static final By expenseTxt = By.id("expense_amount_text");
+    public static final String calendarMenuBtnAccessID = "Open navigation";
+    public static final By dateTxt = By.xpath("//*/androidx.viewpager.widget.ViewPager/android.view.ViewGroup/android.widget.TextView[1]");
 
     public enum AmountLabel {
         INCOME,
         EXPENSE,
-        BALANCE
+        BALANCE,
+        CALENDAR
     }
 
-    public boolean isOnHomePage(){
+    public boolean isOnHomePage() {
         return driver.findElement(balanceBtn).isEnabled();
     }
 
@@ -34,6 +37,7 @@ public class HomePO {
             case INCOME -> driver.findElement(incomeBtn).click();
             case EXPENSE -> driver.findElement(expenseBtn).click();
             case BALANCE -> driver.findElement(balanceBtn).click();
+            case CALENDAR -> driver.findElementByAccessibilityId(calendarMenuBtnAccessID).click();
         }
     }
 
@@ -52,6 +56,10 @@ public class HomePO {
                 return 0;
             }
         }
+    }
+
+    public String getDateText() {
+        return driver.findElement(dateTxt).getText();
     }
 
 }

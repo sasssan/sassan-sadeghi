@@ -3,6 +3,7 @@ package com.n26.monefy.steps;
 import com.n26.TestConfig;
 import com.n26.TestRunnerBase;
 import com.n26.monefy.pages.AmountPO;
+import com.n26.monefy.pages.CalendarMenuPO;
 import com.n26.monefy.pages.HomePO;
 import cucumber.api.Scenario;
 import cucumber.api.java.Before;
@@ -26,6 +27,7 @@ import static org.openqa.selenium.remote.CapabilityType.PLATFORM_NAME;
 public class BeforeSteps {
     HomePO homePage;
     AmountPO amountPage;
+    CalendarMenuPO calendarMenu;
 
     @SneakyThrows
     @Before()
@@ -42,7 +44,9 @@ public class BeforeSteps {
         driver.manage().timeouts().implicitlyWait(Long.parseLong(props.getDefaultTimeoutMilSec()),
                 TimeUnit.MILLISECONDS);
 
+
         homePage.setDriver(driver);
         amountPage.setDriver(driver);
+        calendarMenu.setDriver(driver);
     }
 }

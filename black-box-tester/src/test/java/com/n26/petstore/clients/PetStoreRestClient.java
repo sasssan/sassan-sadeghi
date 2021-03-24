@@ -38,7 +38,6 @@ public class PetStoreRestClient extends RestClientBase {
 
 
     public void postPet(String name, String status) {
-        //TODO can actually check a combination of other attributes like category, photo url
         request = given();
         request.header("Content-Type", "application/json")
                 .header("Accept", "application/json");
