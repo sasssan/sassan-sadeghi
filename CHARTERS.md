@@ -1,6 +1,7 @@
 # Charters
 
 ###test id:1
+
 **Priority**: Critical
 
 **Duration**: 30 minutes
@@ -323,7 +324,7 @@ If any historical transactions will be missed in the search results.
 ---
 
 ##Further Comments
-This charter includes critical and high priority test cases for the Monefy application. Critical tests are targeting the most essential features without which the app should never be released. High priority tests are slightly less essential but they have a huge impact on the business. These are the main areas I have targeted for a quick round of exploratory testing:
+This charter includes critical and high priority test cases for the Monefy application. Critical tests are targeting the most essential features without which the app should never be released. High priority tests are slightly less significant but they still have a huge impact on the business. These are the main areas I have targeted for a quick round of exploratory testing:
 
 - Ability to download, install and run. The most important feature of every application.
 - Ability to use the main functionalities such as recording and categorizing income and expenses, calendar functionalities, internet access for paid customers, etc. These features are the main reasons the customers would want to download and use the app.

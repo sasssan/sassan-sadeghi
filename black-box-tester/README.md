@@ -43,7 +43,7 @@ There is a .bash script for Windows and a Shell script for Linux which after thi
 After each round of execution, a html report is generated at the */target/* directory. Test reports are labeled with system timestamp and archived in that directory. Open each report directory and open this file: *cucumber-html-reports/overview-features.html*. This is a powerful reporting tools that exposes all sorts of information about test results. Please refer to their GitHub page for further information: https://github.com/damianszczepanik/cucumber-reporting  
 
 ## Navigating in the project
-The project structure is a standard gradle project. All the test code can be found in *src/test/java* and all the Cucumber feature files are located in *src/test/resources/features*. Anything specific to Petstore or Monefy applications is placed in a dedicated package or directory. To run the tests on an IDE, go to *src/test/java/com.n26.*.tests* and execute the TestNG test runner. For IntelliJ, you need to install the TestNG plugin. 
+The project structure is a standard gradle project. All the test code can be found in *src/test/java* and all the Cucumber feature files are located in *src/test/resources/features*. Anything specific to Petstore or Monefy applications is placed in a dedicated package or directory. To run the tests on an IDE, go to *src/test/java/com.n26.\*.tests* and execute the TestNG test runner. For most IDEs like IntelliJ, you need to install the TestNG plugin. 
 
 
 ## Further Comments
