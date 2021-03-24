@@ -272,3 +272,15 @@
 
 
 
+---
+
+### test id:28
+
+**Idea**: Test if left-hand and right-hand side menus can be opened and closed by swipe gestures.
+
+**Priority**: Low. User can still open both menus in alternative ways.
+
+**Automation Candidate**: Yes. UI test automation.
+
+
+
