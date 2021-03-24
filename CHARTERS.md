@@ -342,6 +342,7 @@ This charter includes critical and high priority test cases for the Monefy appli
 - Ability to preserve user data. Losing user data can hugely impact app rating among customers.
 - Ability to gracefully handle invalid inputs, boundary errors, connectivity issues etc.
 
-Overall, I did not find any significant issues in my quick round of exploratory testing. There was only two minor issues witnessed in the following scenarios:
+Overall, I did not find any significant issues in my quick round of exploratory testing. There was only three minor issues witnessed in the following scenarios:
  1. Searching partial names of categories in the search bar (e.g. Deposit instead of Deposits). Categories will show in the results only when their names are searched in full.
- 2. When the date range is set to "ALL" in the calendar menu, the upper date range displayed on the home page is set to the next Monday. I found this strange because normally one would expect to see all the expenses until the current day not in the future.  
+ 2. When the date range is set to "ALL" in the calendar menu, the upper date range displayed on the home page is set to the next Monday. I found this strange because normally one would expect to see all the expenses until the current day not in the future.
+ 3. On the money transfer page, If the user adds a note and then immediately taps on the amount text field, the native keyboard is not automatically hidden.
