@@ -1,6 +1,6 @@
 # Charters
 
-###test id:1
+### test id:1
 
 **Priority**: Critical
 
@@ -32,6 +32,7 @@ any problems with installation. See if the app can be installed and run for the 
 
 ---
 ###test id:2
+
 **Priority**: Critical
 
 **Duration**: 15 minutes
@@ -61,6 +62,7 @@ if the app can calculate and reflect the values correctly plus if the calculator
 
 ---
 ###test id:3
+
 **Priority**: Critical
 
 **Duration**: 5 minutes
@@ -89,6 +91,7 @@ any dependency of the app state/data on cache or memory. Also check if soft clos
 
 ---
 ###test id:4
+
 **Priority**: High
 
 **Duration**: 30 minutes
@@ -116,6 +119,7 @@ if the app crashes under any circumstances. if the app crashes, investigate if i
 
 ---
 ###test id:5
+
 **Priority**: High
 
 **Duration**: 10 minutes
@@ -140,6 +144,7 @@ if the app has any connectivity issues when paid users try to connect the app to
 
 ---
 ###test id:6
+
 **Priority**: High
 
 **Duration**: 30 minutes
@@ -166,6 +171,7 @@ if there are any problems with viewing expenses for a given date. Plus invalid d
 
 ---
 ###test id:7
+
 **Priority**: High
 
 **Duration**: 15 minutes
@@ -192,6 +198,7 @@ if interruptions such as phone calls, notifications and locking the screen will 
 
 ---
 ###test id:8
+
 **Priority**: High
 
 **Duration**: 15 minutes
@@ -218,6 +225,7 @@ if failure to online services leads to an unexpected error or crash.
 
 ---
 ###test id:9
+
 **Priority**: High
 
 **Duration**: 1 hour
@@ -244,6 +252,7 @@ any misrepresentation of income and expenses based on categories
 
 ---
 ###test id:10
+
 **Priority**: High
 
 **Duration**: 15 minutes
@@ -271,6 +280,7 @@ if there are any errors with the users subscribing to Monefy Pro features. Plus 
 
 ---
 ###test id:11
+
 **Priority**: High
 
 **Duration**: 15 minutes
@@ -297,6 +307,7 @@ If there are issues with delete and undo-delete actions.
 
 ---
 ###test id:12
+
 **Priority**: High
 
 **Duration**: 15 minutes
