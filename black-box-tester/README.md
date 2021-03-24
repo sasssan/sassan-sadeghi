@@ -47,3 +47,4 @@ The project structure is a standard gradle project. All the test code can be fou
 
 
 ## Further Comments
+To test any application, we need to first bring it to a known status. Depending on the system under test, this can be done in various ways such as mocking test data in a local database, clearing the cache, restarting the container inside which the application is running, etc. In order to test the functionality of the swagger Pet Store application, the only way we can change the state of the application is through the APIs so we can't test the functionality of any individual endpoint without relying on other endpoints. For example, I need to use a GET API to check if my POST API created the new record successfully. This is also reflected in my cucumber feature files.  

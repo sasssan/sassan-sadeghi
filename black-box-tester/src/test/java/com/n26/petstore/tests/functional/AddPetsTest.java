@@ -1,4 +1,4 @@
-package com.n26.petstore.tests;
+package com.n26.petstore.tests.functional;
 
 
 import com.n26.TestRunnerBase;
