@@ -180,65 +180,95 @@
 
 ---
 
-### test id:1
+### test id:19
 
-**Idea**: Idea
+**Idea**: Test if the user can change the language.
 
-**Priority**: Critical
+**Priority**: High. Can significantly impact customer rating.
 
-**Automation Candidate**: Yes
-
----
-
-### test id:1
-
-**Idea**: Idea
-
-**Priority**: Critical
-
-**Automation Candidate**: Yes
+**Automation Candidate**: Yes. Unit test to ensure localization libraries are correctly configured and used in the app. Also unit test to verify the list of available languages. UI test to change one language and verify if it's correctly displayed.
 
 ---
 
-### test id:1
+### test id:20
 
-**Idea**: Idea
+**Idea**: Test if the user can configure first day of the week and month.
 
-**Priority**: Critical
+**Priority**: Low. Not part of the main features.
 
-**Automation Candidate**: Yes
-
----
-
-### test id:1
-
-**Idea**: Idea
-
-**Priority**: Critical
-
-**Automation Candidate**: Yes
+**Automation Candidate**: Yes. Unit test for week and month logic and configuration. UI test to check if those configurations are displayed correctly.  
 
 ---
 
-### test id:1
+### test id:21
 
-**Idea**: Idea
+**Idea**: Test if the dark mode won't cause any UI issues.
 
-**Priority**: Critical
+**Priority**: Medium. Problems with this feature need to be fixed before release.
 
-**Automation Candidate**: Yes
+**Automation Candidate**: Partially Yes. There are automation tools that provide image procesing capabilities. But at the end of the day this features need to also be tested manually. 
+
+---
+
+### test id:22
+
+**Idea**: Test if the user can make recurring expenses and income.
+
+**Priority**: High. Can significantly impact customer rating.
+
+**Automation Candidate**: Yes. Unit test for business logic. UI test to check if one recurring payment is displayed in the target date.
 
 ---
 
-### test id:1
+### test id:23
 
-**Idea**: Idea
+**Idea**: Test if category and account names can be edited.
 
-**Priority**: Critical
+**Priority**: Low. Not a main feature.
 
-**Automation Candidate**: Yes
+**Automation Candidate**: Yes. Unit test for business logic which includes verifying all the transactions assigned to an account or category are still preserved after editing. UI test to edit one category and one account name. Verify the edited name is displayed correctly.
 
 ---
+
+### test id:24
+
+**Idea**: Test if budget mode can be used with a set limit.
+
+**Priority**: High. Can significantly impact customer rating.
+
+**Automation Candidate**: Yes. Unit test to verify logic behind assigning budget limits to each month. UI test to verify that limit is displayed correctly. 
+
+---
+
+### test id:25
+
+**Idea**: Test if tapping on categories will highlight the pie chart.
+
+**Priority**: Low. Not a main feature.
+
+**Automation Candidate**: Yes. UI test to check the presence and text value of the highlighted element for each category. Might be a little challenging to automate because the user is immediately taken to the amount page. 
+
+
+---
+
+### test id:26
+
+**Idea**: Test if notes can be added to transactions and later displayed on the home page.
+
+**Priority**: Medium. Problems with this feature need to be fixed before release.
+
+**Automation Candidate**: Yes. Unit tests to verify the logic of assigning notes to transactions. UI tests to display them on the screen.
+
+
+---
+
+### test id:27
+
+**Idea**: Test if the calculator on the amount page works correctly.
+
+**Priority**: Medium. Problems with this feature need to be fixed before release.
+
+**Automation Candidate**: Yes. Unit tests to verify all the calculator operations. UI test to verify the right buttons are linked with the right numbers and math operations.
 
 
 
