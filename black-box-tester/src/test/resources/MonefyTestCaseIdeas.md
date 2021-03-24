@@ -1,4 +1,4 @@
-## Moneyfy Test Case Ideas
+## Monefy Test Case Ideas
 
 ### test id:1
 
