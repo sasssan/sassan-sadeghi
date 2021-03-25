@@ -282,5 +282,15 @@
 
 **Automation Candidate**: Yes. UI test automation.
 
+---
+
+### test id:29
+
+**Idea**: Test if the views are correctly loaded for each page. Each page should have a sanity test on the UI to verify all the components are loaded on the screen. 
+
+**Priority**: Depending on the significance of the view component, could vary from low to critical. e.g. if the expenses button doesn't load, it's critical but if the 'review us' button doesn't load, it's much less important.
+
+**Automation Candidate**: Yes. UI test automation.
+
 
 
