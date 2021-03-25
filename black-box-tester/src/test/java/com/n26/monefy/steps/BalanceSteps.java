@@ -2,6 +2,7 @@ package com.n26.monefy.steps;
 
 import com.n26.monefy.pages.AmountPO;
 import com.n26.monefy.pages.HomePO;
+import com.n26.monefy.pages.ThreeDotsMenuPO;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -17,6 +18,7 @@ public class BalanceSteps {
 
     HomePO homePage;
     AmountPO amountPage;
+    ThreeDotsMenuPO threeDotsMenu;
 
     @And("The balance is showing {int} on the home page")
     public void assertBalance(int balance) {
@@ -60,6 +62,10 @@ public class BalanceSteps {
                 "expected expense to be $" + expense + " but found $" + actualExpense);
     }
 
+    @And("^The balance displayed for \"([^\"]*)\" Account is \"([^\"]*)\" dollars$")
+    public void assertAccountBalance(String account, String amount) {
+        Assert.assertEquals( amount, threeDotsMenu.getAmountByAccountName(account).split("\\.")[0]);
+    }
 
 
 }

@@ -5,6 +5,7 @@ import com.n26.TestRunnerBase;
 import com.n26.monefy.pages.AmountPO;
 import com.n26.monefy.pages.CalendarMenuPO;
 import com.n26.monefy.pages.HomePO;
+import com.n26.monefy.pages.ThreeDotsMenuPO;
 import cucumber.api.Scenario;
 import cucumber.api.java.Before;
 import io.appium.java_client.android.AndroidDriver;
@@ -28,6 +29,7 @@ public class BeforeSteps {
     HomePO homePage;
     AmountPO amountPage;
     CalendarMenuPO calendarMenu;
+    ThreeDotsMenuPO threeDotsMenu;
 
     @SneakyThrows
     @Before()
@@ -48,5 +50,6 @@ public class BeforeSteps {
         homePage.setDriver(driver);
         amountPage.setDriver(driver);
         calendarMenu.setDriver(driver);
+        threeDotsMenu.setDriver(driver);
     }
 }

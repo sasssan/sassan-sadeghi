@@ -18,9 +18,10 @@ public class AmountPO {
     public static final By categoryBtn = By.id("keyboard_action_button");
     public static final By salaryBtn = By.xpath("//*/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.ImageView");
     public static final By eatingOutBtn = By.xpath("//*/android.widget.FrameLayout[5]/android.widget.LinearLayout");
+    public static final By shoeKeyboardBtn = By.id("show_keyboard_fab");
 
 
-    private void addAmount(int amount) {
+    public void addAmountToCategory(int amount, String note) {
         // of course this is not very reusable but we don't have much time!
         if (amount == 100) {
             driver.findElement(key1).click();
@@ -30,21 +31,24 @@ public class AmountPO {
             driver.findElement(key5).click();
             driver.findElement(key1).click();
         }
+        if(!note.isEmpty()){
+            driver.findElement(amountNote).sendKeys(note);
+        }
+        driver.findElement(categoryBtn).click();
     }
 
-    public void addIncomeSalary100(String note){
-        addAmount(100);
-        driver.findElement(amountNote).sendKeys(note);
-        driver.findElement(categoryBtn).click();
+    public void addIncomeSalary100(String note) {
+        addAmountToCategory(100, note);
         driver.findElement(salaryBtn).click();
     }
 
-
-    public void addExpenseEatingOut51(String note){
-        addAmount(51);
-        driver.findElement(amountNote).sendKeys(note);
-        driver.findElement(categoryBtn).click();
+    public void addExpenseEatingOut51(String note) {
+        addAmountToCategory(51, note);
         driver.findElement(eatingOutBtn).click();
+    }
+
+    public void showKeyboard() {
+        driver.findElement(shoeKeyboardBtn).click();
     }
 
 }

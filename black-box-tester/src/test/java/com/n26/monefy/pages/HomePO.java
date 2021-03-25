@@ -16,6 +16,7 @@ public class HomePO {
     public static final By incomeBtn = By.id("income_button");
     public static final By expenseBtn = By.id("expense_button");
     public static final By balanceBtn = By.id("balance_amount");
+    public static final String threeDotsBtnAccessID = "Settings";
     public static final By incomeTxt = By.id("income_amount_text");
     public static final By expenseTxt = By.id("expense_amount_text");
     public static final String calendarMenuBtnAccessID = "Open navigation";
@@ -25,7 +26,8 @@ public class HomePO {
         INCOME,
         EXPENSE,
         BALANCE,
-        CALENDAR
+        CALENDAR,
+        THREEDOTS
     }
 
     public boolean isOnHomePage() {
@@ -38,6 +40,7 @@ public class HomePO {
             case EXPENSE -> driver.findElement(expenseBtn).click();
             case BALANCE -> driver.findElement(balanceBtn).click();
             case CALENDAR -> driver.findElementByAccessibilityId(calendarMenuBtnAccessID).click();
+            case THREEDOTS -> driver.findElementByAccessibilityId(threeDotsBtnAccessID).click();
         }
     }
 
