@@ -53,6 +53,7 @@ The project structure is a standard gradle project. All the test code can be fou
 
 - For test case ideas please refer to *src/test/resources/MonefyTestCaseIdeas.md*
 - For automated test cases please refer to *src/test/resources/features/monefy*
+- I won't be surprised if the UI tests are slightly unstable. Generally, Appium tests need to be run many many times before they can be trusted!
 
 #### Pet Store Tests
 

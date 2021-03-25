@@ -39,13 +39,19 @@ public class BalanceSteps {
     }
 
 
-    @And("The user adds {int} dollars on the amounts page")
-    public void addAmount(int amount) {
-        if (amount == 100) {
-            amountPage.addIncomeSalary100("test income note");
-        } else if (amount == 51) {
-            amountPage.addExpenseEatingOut51("test expense note");
-        }
+    @And("The user adds {int} dollars on the amounts page for Salary")
+    public void addIncome(int amount) {
+        amountPage.addIncomeSalary100("test income note");
+    }
+
+    @And("The user adds {int} dollars on the amounts page for Eating Out")
+    public void addExpense(int amount) {
+        amountPage.addExpenseEatingOut51("test expense note");
+    }
+
+    @Then("The {string} category is displayed in the list")
+    public void assertCategoryInList(String category) {
+        Assert.assertTrue(homePage.categoryExistsInList(category));
     }
 
     @And("The income is showing {int} on the home page")
@@ -64,7 +70,7 @@ public class BalanceSteps {
 
     @And("^The balance displayed for \"([^\"]*)\" Account is \"([^\"]*)\" dollars$")
     public void assertAccountBalance(String account, String amount) {
-        Assert.assertEquals( amount, threeDotsMenu.getAmountByAccountName(account).split("\\.")[0]);
+        Assert.assertEquals(amount, threeDotsMenu.getAmountByAccountName(account).split("\\.")[0]);
     }
 
 

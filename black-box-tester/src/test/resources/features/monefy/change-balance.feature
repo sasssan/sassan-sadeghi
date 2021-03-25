@@ -11,7 +11,7 @@ Feature: Change and view balance
 
     When The user taps on the "income" button
 
-    And The user adds 100 dollars on the amounts page
+    And The user adds 100 dollars on the amounts page for Salary
 
     Then The user is returned to the home page
 
@@ -23,10 +23,16 @@ Feature: Change and view balance
 #  these scenarios (add income, add expense, calculate balance, etc.) should be tested independently
     When The user taps on the "expense" button
 
-    And The user adds 51 dollars on the amounts page
+    And The user adds 51 dollars on the amounts page for Eating Out
 
     Then The user is returned to the home page
 
     And The expense is showing 51 on the home page
 
     And The balance is showing 49 on the home page
+
+    When The user taps on the "balance" button
+
+    Then The "Salary" category is displayed in the list
+
+    And The "Eating Out" category is displayed in the list

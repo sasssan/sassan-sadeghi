@@ -32,11 +32,11 @@ Feature: Change date
 
     When The user taps on the "income" button
 
-    And The user adds 100 dollars on the amounts page
+    And The user adds 100 dollars on the amounts page for Salary
 
     And The balance is showing 100 on the home page
 
-    When Today's date is set to "1/2/21" on the app
+    And Today's date is set to "1/2/21" on the app
 
     Then The balance is showing 0 on the home page
 

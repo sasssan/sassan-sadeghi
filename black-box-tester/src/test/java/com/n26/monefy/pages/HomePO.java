@@ -21,6 +21,8 @@ public class HomePO {
     public static final By expenseTxt = By.id("expense_amount_text");
     public static final String calendarMenuBtnAccessID = "Open navigation";
     public static final By dateTxt = By.xpath("//*/androidx.viewpager.widget.ViewPager/android.view.ViewGroup/android.widget.TextView[1]");
+    public static final By categoryList = By.xpath("//*/android.widget.ExpandableListView/android.widget.RelativeLayout");
+    public static final By categoryName = By.xpath("//android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[1]");
 
     public enum AmountLabel {
         INCOME,
@@ -63,6 +65,11 @@ public class HomePO {
 
     public String getDateText() {
         return driver.findElement(dateTxt).getText();
+    }
+
+    public boolean categoryExistsInList(String category) {
+        return driver.findElements(categoryList).stream().
+                anyMatch(element -> element.findElement(categoryName).getText().equalsIgnoreCase(category));
     }
 
 }
